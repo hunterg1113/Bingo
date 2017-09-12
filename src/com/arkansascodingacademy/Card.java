@@ -54,7 +54,7 @@ public class Card
 
     public boolean bingo()
     {
-        return bingobByStamp() || bingoByColumn() || bingoByRow() || bingoByDiagonal();
+        return bingoByStamp() || bingoByColumn() || bingoByRow() || bingoByDiagonal();
     }
 
     public boolean bingoByRow()
@@ -112,7 +112,7 @@ public class Card
         return bingo;
     }
 
-    public boolean bingobByStamp()
+    public boolean bingoByStamp()
     {
         boolean bingo = false;
 
