@@ -9,14 +9,14 @@ public class Numbers
     private ArrayList<Integer> uncalledNumbers = new ArrayList<>();
     private Random randGen = new Random();
 
-    public Numbers()
+    public Numbers(int min, int max)
     {
-        fillUncalledNumbers();
+        fillUncalledNumbers(min, max);
     }
 
-    public void fillUncalledNumbers()
+    public void fillUncalledNumbers(int min, int max)
     {
-        for (int i = 1; i <= 75; i++)
+        for (int i = min; i <= max; i++)
         {
             uncalledNumbers.add(i);
         }
